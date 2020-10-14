@@ -81,12 +81,12 @@ variable "sys_domain" {
 
 variable "opsman_version" {
   type    = "string"
-  default = "2.8.2"
+  default = "2.8.15"
 }
 
 variable "opsman_build" {
   type    = "string"
-  default = "203"
+  default = "311"
 }
 
 variable "pas_version" {
