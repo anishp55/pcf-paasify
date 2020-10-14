@@ -1,7 +1,7 @@
 provider "acme" {
   server_url = "https://acme-v02.api.letsencrypt.org/directory"
 
-  version = "~> 1.2.0"
+  version = "~> 1.3.0"
 }
 
 resource "tls_private_key" "private_key" {
@@ -18,7 +18,6 @@ resource "acme_certificate" "certificate" {
   common_name               = "pcf.${local.base_domain}"
   subject_alternative_names = ["*.apps.${local.base_domain}", "*.sys.${local.base_domain}", "*.uaa.sys.${local.base_domain}", "*.login.sys.${local.base_domain}"]
   recursive_nameservers     = ["8.8.8.8:53"]
-  
   dns_challenge {
     provider = "azure"
 
