@@ -81,17 +81,17 @@ variable "sys_domain" {
 
 variable "opsman_version" {
   type    = "string"
-  default = "2.8.15"
+  default = "2.10.9"
 }
 
 variable "opsman_build" {
   type    = "string"
-  default = "311"
+  default = "195"
 }
 
 variable "pas_version" {
   type = "string"
-  default = "2.8.2"
+  default = "2.11.0"
 }
 
 variable "tiles" {
@@ -106,12 +106,12 @@ variable "tile_versions" {
     "mysql" = "2.7.5"
     "redis" = "2.2.1"
     "rabbit" = "1.18.3"
-    "scs" = "3.0.5"
+    "scs" = "3.1.19"
     "metrics" = "1.6.1"
     "healthwatch" = "1.8.0"
     "pcc" = "1.8.0"
-    "credhub" = "1.3.2"
-    "scdf" = "1.6.1"
+    "credhub" = "1.5.0"
+    "scdf" = "1.10.2"
     "antivirus" = "2.1.6"
     "gateway" = "1.0.0"
     "fim" = "2.0.0"
